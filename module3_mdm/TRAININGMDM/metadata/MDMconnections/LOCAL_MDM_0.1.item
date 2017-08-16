@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:org.talend.cwm.xml="http://www.talend.org/cwm/resource/xml/2010">
+  <TalendMetadata:MDMConnection xmi:id="_QKIosX3TEeeINc4wAl8r7g" name="LOCAL_MDM" label="LOCAL_MDM" dataPackage="_sLXFgX3YEeeINc4wAl8r7g" version="s60" Username="administrator" Password="gYS5jltDdzLSfHIqaDxbXg==" Datamodel="HR" Datacluster="HR" serverUrl="http://localhost:8180/talendmdm/services/soap">
+    <schemas xmi:id="_1cKeUH3fEeeINc4wAl8r7g" label="OfficeOut" LoopLimit="50" conceptType="OUTPUT">
+      <root xmi:id="_5VKwMH3fEeeINc4wAl8r7g" XMLPath="/Office" RelatedColumn="" Attribute="main" Order="9" Type="id_String"/>
+      <root xmi:id="_5VKwMX3fEeeINc4wAl8r7g" XMLPath="/Office/Name" RelatedColumn="Name" Attribute="main" Order="11" Type="id_String"/>
+      <root xmi:id="_5VKwMn3fEeeINc4wAl8r7g" XMLPath="/Office/Location" RelatedColumn="Location" Attribute="main" Order="12" Type="id_String"/>
+      <root xmi:id="_5VKwM33fEeeINc4wAl8r7g" XMLPath="/Office/Location/Address" RelatedColumn="Address" Attribute="branch" Order="13" Type="id_String"/>
+      <root xmi:id="_5VKwNH3fEeeINc4wAl8r7g" XMLPath="/Office/Location/City" RelatedColumn="City" Attribute="branch" Order="14" Type="id_String"/>
+      <root xmi:id="_5VKwNX3fEeeINc4wAl8r7g" XMLPath="/Office/Location/Country" RelatedColumn="Country" Attribute="branch" Order="15" Type="id_String"/>
+      <root xmi:id="_5VKwNn3fEeeINc4wAl8r7g" XMLPath="/Office/Location/ZipCode" RelatedColumn="ZipCode" Attribute="branch" Order="16" Type="id_String"/>
+      <loop xmi:id="_5VKwN33fEeeINc4wAl8r7g" XMLPath="/Office/OfficeId" RelatedColumn="OfficeId" Attribute="main" Order="10" Type="id_String"/>
+    </schemas>
+    <schemas xmi:id="_8iQsIH6AEeeINc4wAl8r7g" label="OfficeOut" LoopLimit="50" conceptType="OUTPUT">
+      <root xmi:id="_9TSgcX6AEeeINc4wAl8r7g" XMLPath="/Office" RelatedColumn="" Attribute="main" Order="1" Type="id_String"/>
+      <root xmi:id="_9TSgcn6AEeeINc4wAl8r7g" XMLPath="/Office/Name" RelatedColumn="Name" Attribute="main" Order="3" Type="id_String"/>
+      <root xmi:id="_9TSgc36AEeeINc4wAl8r7g" XMLPath="/Office/Location" RelatedColumn="Location" Attribute="main" Order="4" Type="id_String"/>
+      <root xmi:id="_9TSgdH6AEeeINc4wAl8r7g" XMLPath="/Office/Location/Address" RelatedColumn="Address" Attribute="branch" Order="5" Type="id_String"/>
+      <root xmi:id="_9TSgdX6AEeeINc4wAl8r7g" XMLPath="/Office/Location/City" RelatedColumn="City" Attribute="branch" Order="6" Type="id_String"/>
+      <root xmi:id="_9TSgdn6AEeeINc4wAl8r7g" XMLPath="/Office/Location/Country" RelatedColumn="Country" Attribute="branch" Order="7" Type="id_String"/>
+      <root xmi:id="_9TSgd36AEeeINc4wAl8r7g" XMLPath="/Office/Location/ZipCode" RelatedColumn="ZipCode" Attribute="branch" Order="8" Type="id_String"/>
+      <loop xmi:id="_9TSgeH6AEeeINc4wAl8r7g" XMLPath="/Office/OfficeId" RelatedColumn="OfficeId" Attribute="main" Order="2" Type="id_String"/>
+    </schemas>
+    <schemas xmi:id="_iJBNsIDUEeeINc4wAl8r7g" label="OfficeIn" LoopExpression="/Office/OfficeId" LoopLimit="50">
+      <conceptTargets xmi:id="_mEhZ8IDUEeeINc4wAl8r7g" targetName="OfficeId" RelativeLoopExpression="."/>
+      <conceptTargets xmi:id="_mEhZ8YDUEeeINc4wAl8r7g" targetName="Name" RelativeLoopExpression="../Name"/>
+      <conceptTargets xmi:id="_mEhZ8oDUEeeINc4wAl8r7g" targetName="Location" RelativeLoopExpression="../Location"/>
+      <conceptTargets xmi:id="_mEhZ84DUEeeINc4wAl8r7g" targetName="Address" RelativeLoopExpression="../Location/Address"/>
+      <conceptTargets xmi:id="_mEhZ9IDUEeeINc4wAl8r7g" targetName="City" RelativeLoopExpression="../Location/City"/>
+      <conceptTargets xmi:id="_mEhZ9YDUEeeINc4wAl8r7g" targetName="Country" RelativeLoopExpression="../Location/Country"/>
+      <conceptTargets xmi:id="_mEhZ9oDUEeeINc4wAl8r7g" targetName="ZipCode" RelativeLoopExpression="../Location/ZipCode"/>
+    </schemas>
+    <schemas xmi:id="_rZ7YYIDUEeeINc4wAl8r7g" label="OfficeOut" LoopLimit="50" conceptType="OUTPUT">
+      <root xmi:id="_sGyeYYDUEeeINc4wAl8r7g" XMLPath="/Office" RelatedColumn="" Attribute="main" Order="1" Type="id_String"/>
+      <root xmi:id="_sGyeYoDUEeeINc4wAl8r7g" XMLPath="/Office/Name" RelatedColumn="Name" Attribute="main" Order="3" Type="id_String"/>
+      <root xmi:id="_sGyeY4DUEeeINc4wAl8r7g" XMLPath="/Office/Location" RelatedColumn="Location" Attribute="main" Order="4" Type="id_String"/>
+      <root xmi:id="_sGyeZIDUEeeINc4wAl8r7g" XMLPath="/Office/Location/Address" RelatedColumn="Address" Attribute="branch" Order="5" Type="id_String"/>
+      <root xmi:id="_sGyeZYDUEeeINc4wAl8r7g" XMLPath="/Office/Location/City" RelatedColumn="City" Attribute="branch" Order="6" Type="id_String"/>
+      <root xmi:id="_sGyeZoDUEeeINc4wAl8r7g" XMLPath="/Office/Location/Country" RelatedColumn="Country" Attribute="branch" Order="7" Type="id_String"/>
+      <root xmi:id="_sGyeZ4DUEeeINc4wAl8r7g" XMLPath="/Office/Location/ZipCode" RelatedColumn="ZipCode" Attribute="branch" Order="8" Type="id_String"/>
+      <loop xmi:id="_sGyeaIDUEeeINc4wAl8r7g" XMLPath="/Office/OfficeId" RelatedColumn="OfficeId" Attribute="main" Order="2" Type="id_String"/>
+    </schemas>
+    <schemas xmi:id="_qco3cIDZEeeINc4wAl8r7g" label="EmployeeOut" LoopLimit="50" conceptType="OUTPUT">
+      <root xmi:id="_rqSWUYDZEeeINc4wAl8r7g" XMLPath="/Employee" RelatedColumn="" Attribute="main" Order="1" Type="id_String"/>
+      <root xmi:id="_rqSWUoDZEeeINc4wAl8r7g" XMLPath="/Employee/FirstName" RelatedColumn="FirstName" Attribute="main" Order="3" Type="id_String"/>
+      <root xmi:id="_rqSWU4DZEeeINc4wAl8r7g" XMLPath="/Employee/LastName" RelatedColumn="LastName" Attribute="main" Order="4" Type="id_String"/>
+      <root xmi:id="_rqSWVIDZEeeINc4wAl8r7g" XMLPath="/Employee/Email" RelatedColumn="Email" Attribute="main" Order="5" Type="id_String"/>
+      <root xmi:id="_rqSWVYDZEeeINc4wAl8r7g" XMLPath="/Employee/StartDate" RelatedColumn="StartDate" Attribute="main" Order="6" Type="id_Date"/>
+      <root xmi:id="_rqSWVoDZEeeINc4wAl8r7g" XMLPath="/Employee/PrimaryCity" RelatedColumn="PrimaryCity" Attribute="main" Order="7" Type="id_String"/>
+      <root xmi:id="_rqSWV4DZEeeINc4wAl8r7g" XMLPath="/Employee/OfficeId" RelatedColumn="OfficeId" Attribute="main" Order="8" Type="id_String"/>
+      <loop xmi:id="_rqSWWIDZEeeINc4wAl8r7g" XMLPath="/Employee/EmployeeId" RelatedColumn="EmployeeId" Attribute="main" Order="2" Type="id_String"/>
+    </schemas>
+    <schemas xmi:id="_BdMDIID0EeeINc4wAl8r7g" label="OfficeIn" LoopExpression="/Office" LoopLimit="50">
+      <conceptTargets xmi:id="_EYsyAID0EeeINc4wAl8r7g" targetName="OfficeId" RelativeLoopExpression="OfficeId"/>
+      <conceptTargets xmi:id="_EYsyAYD0EeeINc4wAl8r7g" targetName="Name" RelativeLoopExpression="Name"/>
+      <conceptTargets xmi:id="_EYsyAoD0EeeINc4wAl8r7g" targetName="Address" RelativeLoopExpression="Location/Address"/>
+      <conceptTargets xmi:id="_EYsyA4D0EeeINc4wAl8r7g" targetName="City" RelativeLoopExpression="Location/City"/>
+      <conceptTargets xmi:id="_EYsyBID0EeeINc4wAl8r7g" targetName="Country" RelativeLoopExpression="Location/Country"/>
+      <conceptTargets xmi:id="_EYsyBYD0EeeINc4wAl8r7g" targetName="ZipCode" RelativeLoopExpression="Location/ZipCode"/>
+    </schemas>
+    <schemas xmi:id="_FRWb0ID1EeeINc4wAl8r7g" label="OfficeReceive" LoopExpression="/Office/OfficeId" LoopLimit="50" conceptType="RECEIVE" xPathPrefix="NONE_ITEM">
+      <conceptTargets xmi:id="_I9sxwID1EeeINc4wAl8r7g" targetName="OfficeId" RelativeLoopExpression="."/>
+      <conceptTargets xmi:id="_I9sxwYD1EeeINc4wAl8r7g" targetName="Name" RelativeLoopExpression="../Name"/>
+      <conceptTargets xmi:id="_I9sxwoD1EeeINc4wAl8r7g" targetName="Location" RelativeLoopExpression="../Location"/>
+      <conceptTargets xmi:id="_I9sxw4D1EeeINc4wAl8r7g" targetName="Address" RelativeLoopExpression="../Location/Address"/>
+      <conceptTargets xmi:id="_I9sxxID1EeeINc4wAl8r7g" targetName="City" RelativeLoopExpression="../Location/City"/>
+      <conceptTargets xmi:id="_I9sxxYD1EeeINc4wAl8r7g" targetName="Country" RelativeLoopExpression="../Location/Country"/>
+      <conceptTargets xmi:id="_I9sxxoD1EeeINc4wAl8r7g" targetName="ZipCode" RelativeLoopExpression="../Location/ZipCode"/>
+    </schemas>
+    <schemas xmi:id="_gEvR8H3YEeeINc4wAl8r7g" label="OfficeIn" LoopExpression="/Office" LoopLimit="50">
+      <conceptTargets xmi:id="_kBMgcH3YEeeINc4wAl8r7g" targetName="OfficeId" RelativeLoopExpression="OfficeId"/>
+      <conceptTargets xmi:id="_kTOEkH3YEeeINc4wAl8r7g" targetName="Name" RelativeLoopExpression="Name"/>
+      <conceptTargets xmi:id="_kuV6UH3YEeeINc4wAl8r7g" targetName="Address" RelativeLoopExpression="Location/Address"/>
+      <conceptTargets xmi:id="_k_LysH3YEeeINc4wAl8r7g" targetName="City" RelativeLoopExpression="Location/City"/>
+      <conceptTargets xmi:id="_lP36EH3YEeeINc4wAl8r7g" targetName="Country" RelativeLoopExpression="Location/Country"/>
+      <conceptTargets xmi:id="_lgaQcH3YEeeINc4wAl8r7g" targetName="ZipCode" RelativeLoopExpression="Location/ZipCode"/>
+    </schemas>
+    <schemas xmi:id="_7EcmIID4EeeINc4wAl8r7g" label="EmployeeIn" LoopExpression="/Employee" LoopLimit="50">
+      <conceptTargets xmi:id="_939PkID4EeeINc4wAl8r7g" targetName="EmployeeId" RelativeLoopExpression="EmployeeId"/>
+      <conceptTargets xmi:id="_939PkYD4EeeINc4wAl8r7g" targetName="FirstName" RelativeLoopExpression="FirstName"/>
+      <conceptTargets xmi:id="_939PkoD4EeeINc4wAl8r7g" targetName="LastName" RelativeLoopExpression="LastName"/>
+      <conceptTargets xmi:id="_939Pk4D4EeeINc4wAl8r7g" targetName="Email" RelativeLoopExpression="Email"/>
+      <conceptTargets xmi:id="_939PlID4EeeINc4wAl8r7g" targetName="StartDate" RelativeLoopExpression="StartDate"/>
+      <conceptTargets xmi:id="_939PlYD4EeeINc4wAl8r7g" targetName="PrimaryCity" RelativeLoopExpression="PrimaryCity"/>
+      <conceptTargets xmi:id="_939PloD4EeeINc4wAl8r7g" targetName="OfficeId" RelativeLoopExpression="OfficeId"/>
+    </schemas>
+  </TalendMetadata:MDMConnection>
+  <org.talend.cwm.xml:TdXmlSchema xmi:id="_sLXFgX3YEeeINc4wAl8r7g" name="HR" dataManager="_QKIosX3TEeeINc4wAl8r7g">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_sLXFgn3YEeeINc4wAl8r7g" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_sLXFgH3YEeeINc4wAl8r7g" label="OfficeIn">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sLXFg33YEeeINc4wAl8r7g" label="OfficeId" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sLXFhH3YEeeINc4wAl8r7g" label="Name" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sLXFhX3YEeeINc4wAl8r7g" label="Address" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sLXFhn3YEeeINc4wAl8r7g" label="City" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sLXFh33YEeeINc4wAl8r7g" label="Country" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sLXFiH3YEeeINc4wAl8r7g" label="ZipCode" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_7U6aYH3fEeeINc4wAl8r7g" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_2or70H3fEeeINc4wAl8r7g" label="OfficeOut">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7U6aYn3fEeeINc4wAl8r7g" label="Name" talendType="id_String" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7U6aY33fEeeINc4wAl8r7g" label="Location" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7U6aZH3fEeeINc4wAl8r7g" label="Address" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7U6aZX3fEeeINc4wAl8r7g" label="City" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7U6aZn3fEeeINc4wAl8r7g" label="Country" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7U6aZ33fEeeINc4wAl8r7g" label="ZipCode" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_-nLxQH6AEeeINc4wAl8r7g" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_9TSgcH6AEeeINc4wAl8r7g" label="OfficeOut">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-nLxQX6AEeeINc4wAl8r7g" label="OfficeId" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-nLxQn6AEeeINc4wAl8r7g" label="Name" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-nLxQ36AEeeINc4wAl8r7g" label="Location" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-nLxRH6AEeeINc4wAl8r7g" label="Address" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-nLxRX6AEeeINc4wAl8r7g" label="City" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-nLxRn6AEeeINc4wAl8r7g" label="Country" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-nLxR36AEeeINc4wAl8r7g" label="ZipCode" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_nYQ5wYDUEeeINc4wAl8r7g" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_nYQ5wIDUEeeINc4wAl8r7g" label="OfficeIn">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nYQ5woDUEeeINc4wAl8r7g" label="OfficeId" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nYQ5w4DUEeeINc4wAl8r7g" label="Name" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nYQ5xIDUEeeINc4wAl8r7g" label="Location" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nYQ5xYDUEeeINc4wAl8r7g" label="Address" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nYQ5xoDUEeeINc4wAl8r7g" label="City" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nYQ5x4DUEeeINc4wAl8r7g" label="Country" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nYQ5yIDUEeeINc4wAl8r7g" label="ZipCode" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_sm0pUIDUEeeINc4wAl8r7g" id="_sGyeYIDUEeeINc4wAl8r7g" label="OfficeOut">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sm0pUYDUEeeINc4wAl8r7g" label="OfficeId" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sm0pUoDUEeeINc4wAl8r7g" label="Name" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sm0pU4DUEeeINc4wAl8r7g" label="Location" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sm0pVIDUEeeINc4wAl8r7g" label="Address" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sm0pVYDUEeeINc4wAl8r7g" label="City" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sm0pVoDUEeeINc4wAl8r7g" label="Country" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sm0pV4DUEeeINc4wAl8r7g" label="ZipCode" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_0Ug7gIDZEeeINc4wAl8r7g" id="_rqSWUIDZEeeINc4wAl8r7g" label="EmployeeOut">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0Ug7gYDZEeeINc4wAl8r7g" label="EmployeeId" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0Ug7goDZEeeINc4wAl8r7g" label="FirstName" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0Ug7g4DZEeeINc4wAl8r7g" label="LastName" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0Ug7hIDZEeeINc4wAl8r7g" label="Email" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0Ug7hYDZEeeINc4wAl8r7g" label="StartDate" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0Ug7hoDZEeeINc4wAl8r7g" label="PrimaryCity" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0Ug7h4DZEeeINc4wAl8r7g" label="OfficeId" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_GL84UYD0EeeINc4wAl8r7g" id="_GL84UID0EeeINc4wAl8r7g" label="OfficeIn">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Cdlo0ID3EeeINc4wAl8r7g" label="OfficeId" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Cdlo0YD3EeeINc4wAl8r7g" label="Name" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Cdlo0oD3EeeINc4wAl8r7g" label="Address" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CdvZ0ID3EeeINc4wAl8r7g" label="City" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CdvZ0YD3EeeINc4wAl8r7g" label="Country" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CdvZ0oD3EeeINc4wAl8r7g" label="ZipCode" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Kc4FgYD1EeeINc4wAl8r7g" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_Kc4FgID1EeeINc4wAl8r7g" label="OfficeReceive">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Kc4FgoD1EeeINc4wAl8r7g" label="OfficeId" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Kc4Fg4D1EeeINc4wAl8r7g" label="Name" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Kc4FhID1EeeINc4wAl8r7g" label="Location" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Kc4FhYD1EeeINc4wAl8r7g" label="Address" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Kc4FhoD1EeeINc4wAl8r7g" label="City" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Kc4Fh4D1EeeINc4wAl8r7g" label="Country" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Kc4FiID1EeeINc4wAl8r7g" label="ZipCode" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_-fJLYYD4EeeINc4wAl8r7g" id="_-fJLYID4EeeINc4wAl8r7g" label="EmployeeIn">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TMo4sID6EeeINc4wAl8r7g" label="EmployeeId" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TMo4sYD6EeeINc4wAl8r7g" label="FirstName" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TMo4soD6EeeINc4wAl8r7g" label="LastName" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TMo4s4D6EeeINc4wAl8r7g" label="Email" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TMo4tID6EeeINc4wAl8r7g" label="StartDate" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TMo4tYD6EeeINc4wAl8r7g" label="PrimaryCity" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TMo4toD6EeeINc4wAl8r7g" label="OfficeId" talendType="id_String"/>
+    </ownedElement>
+  </org.talend.cwm.xml:TdXmlSchema>
+</xmi:XMI>

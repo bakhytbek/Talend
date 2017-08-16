@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmserverobject:WSTransformerV2E xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_VEUSYYECEeeINc4wAl8r7g" name="Runnable#ImportFromExcel" description="Runnable#Import MDM data from Excel" timestamp="1502723645031" digestValue="d90301076d0472df260d7b355b5edfc2" lastServerName="local">
+  <processSteps xmi:id="_IMM7AIEDEeeINc4wAl8r7g" pluginJNDI="amalto/local/transformer/plugin/callJob" description="CallJob" parameters="&lt;configuration>&#xA;&lt;url>ltj://MdmImportData/0.1&lt;/url>&#xA;&lt;/configuration>">
+    <inputMappings xmi:id="_IMM7AYEDEeeINc4wAl8r7g" pipelineVariable="_DEFAULT_" pluginVariable="text"/>
+    <outputMappings xmi:id="_IMM7AoEDEeeINc4wAl8r7g" pipelineVariable="output" pluginVariable="result"/>
+  </processSteps>
+</mdmserverobject:WSTransformerV2E>

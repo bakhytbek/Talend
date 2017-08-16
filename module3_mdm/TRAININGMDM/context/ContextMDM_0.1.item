@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_uh724IDvEeeINc4wAl8r7g" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_uh724YDvEeeINc4wAl8r7g" comment="" name="oracle_Password" prompt="oracle_Password?" promptNeeded="false" type="id_Password" value="TDYhYB9tYws="/>
+  <contextParameter xmi:id="_uh724oDvEeeINc4wAl8r7g" comment="" name="oracle_Login" prompt="oracle_Login?" promptNeeded="false" type="id_String" value="SCOTT"/>
+  <contextParameter xmi:id="_uh7244DvEeeINc4wAl8r7g" comment="" name="oracle_Port" prompt="oracle_Port?" promptNeeded="false" type="id_String" value="1521"/>
+  <contextParameter xmi:id="_uh725IDvEeeINc4wAl8r7g" comment="" name="oracle_Server" prompt="oracle_Server?" promptNeeded="false" type="id_String" value="10.0.2.15"/>
+  <contextParameter xmi:id="_uh725YDvEeeINc4wAl8r7g" comment="" name="oracle_Sid" prompt="oracle_Sid?" promptNeeded="false" type="id_String" value="orcl1"/>
+  <contextParameter xmi:id="_uh725oDvEeeINc4wAl8r7g" comment="Filepath for downloading data" name="filepath" prompt="filepath?" promptNeeded="false" type="id_String" value="D:\talend\data"/>
+  <contextParameter xmi:id="_uh7254DvEeeINc4wAl8r7g" comment="Filemask for downloading data (for FileList)" name="filemask" prompt="filemask?" promptNeeded="false" type="id_String" value="*.csv"/>
+  <contextParameter xmi:id="_uh726IDvEeeINc4wAl8r7g" comment="Office files mask" name="filemask_office" prompt="filemask_office?" promptNeeded="false" type="id_String" value="office"/>
+  <contextParameter xmi:id="_uh726YDvEeeINc4wAl8r7g" comment="Primary Employee files mask" name="filemask_emp_primary" prompt="filemask_emp_primary?" promptNeeded="false" type="id_String" value="employee_1"/>
+  <contextParameter xmi:id="_uh726oDvEeeINc4wAl8r7g" comment="Secondary Employee files mask" name="filemask_emp_secondary" prompt="filemask_emp_secondary?" promptNeeded="false" type="id_String" value="employee_2"/>
+  <contextParameter xmi:id="_uh7264DvEeeINc4wAl8r7g" comment="" name="mdm_Login" prompt="mdm_Login?" promptNeeded="false" type="id_String" value="administrator"/>
+  <contextParameter xmi:id="_uh727IDvEeeINc4wAl8r7g" comment="" name="mdm_Password" prompt="mdm_Password?" promptNeeded="false" type="id_Password" value="gYS5jltDdzLSfHIqaDxbXg=="/>
+  <contextParameter xmi:id="_uh727YDvEeeINc4wAl8r7g" comment="" name="mdm_Url" prompt="mdm_Url?" promptNeeded="false" type="id_String" value="http://10.0.2.15:8180/talendmdm/services/soap"/>
+  <contextParameter xmi:id="_uh727oDvEeeINc4wAl8r7g" comment="" name="oracle_Schema" prompt="oracle_Schema?" promptNeeded="false" type="id_String" value="SCOTT"/>
+  <contextParameter xmi:id="_uh7274DvEeeINc4wAl8r7g" comment="" name="oracle_AdditionalParams" prompt="oracle_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

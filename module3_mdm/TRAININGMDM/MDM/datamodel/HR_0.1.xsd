@@ -1,0 +1,53 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
+  <xsd:import namespace="http://www.w3.org/2001/XMLSchema"/>  
+  <xsd:element name="Employee"> 
+    <xsd:complexType> 
+      <xsd:all> 
+        <xsd:element name="EmployeeId" type="AUTO_INCREMENT"/>  
+        <xsd:element maxOccurs="1" minOccurs="1" name="FirstName" type="xsd:string"/>  
+        <xsd:element maxOccurs="1" minOccurs="1" name="LastName" type="xsd:string"/>  
+        <xsd:element maxOccurs="1" minOccurs="1" name="Email" type="xsd:string"/>  
+        <xsd:element maxOccurs="1" minOccurs="1" name="StartDate" type="xsd:date"/> 
+                <xsd:element maxOccurs="1" minOccurs="1" name="PrimaryCity" type="xsd:string"/>
+                <xsd:element maxOccurs="1" minOccurs="1" name="OfficeId" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">Office/OfficeId</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">false</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+            </xsd:all> 
+    </xsd:complexType>  
+    <xsd:unique name="Employee"> 
+      <xsd:selector xpath="."/>   
+            <xsd:field xpath="EmployeeId"/>
+        </xsd:unique> 
+  </xsd:element> 
+    <xsd:simpleType name="AUTO_INCREMENT">
+<xsd:restriction base="xsd:string"/>
+</xsd:simpleType>
+    <xsd:element name="Office">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="OfficeId" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="Name" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="Location" type="Location">
+<xsd:annotation>
+<xsd:appinfo source="X_AutoExpand">true</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Office">
+<xsd:selector xpath="."/>
+            <xsd:field xpath="OfficeId"/>
+</xsd:unique>
+</xsd:element>
+    <xsd:complexType name="Location">
+<xsd:all>
+<xsd:element maxOccurs="1" minOccurs="1" name="Address" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="City" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="Country" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="ZipCode" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+</xsd:schema>

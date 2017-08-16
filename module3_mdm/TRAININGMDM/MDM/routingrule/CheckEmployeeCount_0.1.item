@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmserverobject:WSRoutingRuleE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_O8df4YGdEeeDu-3i5d0BtA" name="CheckEmployeeCount" description="Check count of employees of current office not greater than 50" timestamp="1502808298968" digestValue="033e8a3bf64468597fe81fda32ef41e8" synchronous="true" concept="*" serviceJNDI="amalto/local/service/callJob" parameters="&lt;configuration> &#xA;    &lt;url>ltj://TrgCheckEmpCount/0.1&lt;/url>  &#xA;    &lt;contextParam> &#xA;        &lt;name>exchangeMessage&lt;/name>  &#xA;        &lt;value>{exchange_data}&lt;/value> &#xA;    &lt;/contextParam> &#xA;&lt;/configuration>" condition="OpsIsCreate And ContainerIsHR And ModelIsHR And EntityIsEmployee And IsFromUI" deactive="true">
+  <wsRoutingRuleExpressions xmi:id="_aiRacIJjEeebBbOqoGRjjQ" name="OpsIsCreate" xpath="Update/OperationType" value="UPDATE">
+    <wsOperator xmi:id="_aiRacYJjEeebBbOqoGRjjQ" value="EQUALS"/>
+  </wsRoutingRuleExpressions>
+  <wsRoutingRuleExpressions xmi:id="_aiRacoJjEeebBbOqoGRjjQ" name="ContainerIsHR" xpath="Update/DataCluster" value="HR">
+    <wsOperator xmi:id="_aiRac4JjEeebBbOqoGRjjQ" value="EQUALS"/>
+  </wsRoutingRuleExpressions>
+  <wsRoutingRuleExpressions xmi:id="_aiRadIJjEeebBbOqoGRjjQ" name="ModelIsHR" xpath="Update/DataModel" value="HR">
+    <wsOperator xmi:id="_aiRadYJjEeebBbOqoGRjjQ" value="EQUALS"/>
+  </wsRoutingRuleExpressions>
+  <wsRoutingRuleExpressions xmi:id="_aiRadoJjEeebBbOqoGRjjQ" name="EntityIsEmployee" xpath="Update/Concept" value="Employee">
+    <wsOperator xmi:id="_aiRad4JjEeebBbOqoGRjjQ" value="EQUALS"/>
+  </wsRoutingRuleExpressions>
+  <wsRoutingRuleExpressions xmi:id="_aiRaeIJjEeebBbOqoGRjjQ" name="IsFromUI" xpath="Update/Source" value="genericUI">
+    <wsOperator xmi:id="_aiRaeYJjEeebBbOqoGRjjQ" value="EQUALS"/>
+  </wsRoutingRuleExpressions>
+</mdmserverobject:WSRoutingRuleE>

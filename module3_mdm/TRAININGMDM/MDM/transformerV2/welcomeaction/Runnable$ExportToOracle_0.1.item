@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmserverobject:WSTransformerV2E xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_Hiv44YEEEeeINc4wAl8r7g" name="Runnable#ExportToOracle" description="Runnable#Export MDM data to Oracle" timestamp="1502724186437" digestValue="7ea888d5b89260f097ea16670a868c57" lastServerName="local">
+  <processSteps xmi:id="_Z0FiQIEEEeeINc4wAl8r7g" pluginJNDI="amalto/local/transformer/plugin/callJob" description="CallJob" parameters="&lt;configuration>&#xD;&#xA;&lt;url>ltj://MdmExportData/0.1&lt;/url>&#xD;&#xA;&lt;/configuration>">
+    <inputMappings xmi:id="_Z0FiQYEEEeeINc4wAl8r7g" pipelineVariable="_DEFAULT_" pluginVariable="text"/>
+    <outputMappings xmi:id="_Z0FiQoEEEeeINc4wAl8r7g" pipelineVariable="_DEFAULT_" pluginVariable="result"/>
+  </processSteps>
+</mdmserverobject:WSTransformerV2E>
