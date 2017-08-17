@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSTransformerV2E xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_1qJgUIJbEeebBbOqoGRjjQ" name="beforeSaving_Employee" description="Check count of employees of current office not greater than 50" timestamp="1502885246873" digestValue="5595ff49eaa3645668cbf3bc6954fbdd" lastServerName="local">
-  <processSteps xmi:id="_TyTMYIJsEeebBbOqoGRjjQ" pluginJNDI="amalto/local/transformer/plugin/callJob" description="Call TOS job" parameters="&lt;configuration> &#xA;    &lt;url>ltj://TrgCheckEmpCount/0.1&lt;/url>  &#xA;    &lt;contextParam> &#xA;        &lt;name>exchangeMessage&lt;/name>  &#xA;        &lt;value>{_DEFAULT_}&lt;/value> &#xA;    &lt;/contextParam> &#xA;&lt;/configuration>">
-    <inputMappings xmi:id="_TyTMYYJsEeebBbOqoGRjjQ" pipelineVariable="_DEFAULT_" pluginVariable="text"/>
-    <outputMappings xmi:id="_TyTMYoJsEeebBbOqoGRjjQ" pipelineVariable="output_report" pluginVariable="result"/>
+<mdmserverobject:WSTransformerV2E xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_1qJgUIJbEeebBbOqoGRjjQ" name="beforeSaving_Employee" description="Check count of employees of current office not greater than 50" timestamp="1502895993435" digestValue="5595ff49eaa3645668cbf3bc6954fbdd" lastServerName="local">
+  <processSteps xmi:id="_c4qYUIKKEeebBbOqoGRjjQ" pluginJNDI="amalto/local/transformer/plugin/callJob" description="Call TOS job" parameters="&lt;configuration> &#xA;    &lt;url>ltj://TrgCheckEmpCount/0.1&lt;/url>  &#xA;    &lt;contextParam> &#xA;        &lt;name>exchangeMessage&lt;/name>  &#xA;        &lt;value>{_DEFAULT_}&lt;/value> &#xA;    &lt;/contextParam> &#xA;&lt;/configuration>">
+    <inputMappings xmi:id="_c4qYUYKKEeebBbOqoGRjjQ" pipelineVariable="_DEFAULT_" pluginVariable="text"/>
+    <outputMappings xmi:id="_c4qYUoKKEeebBbOqoGRjjQ" pipelineVariable="output_report" pluginVariable="result"/>
   </processSteps>
 </mdmserverobject:WSTransformerV2E>
